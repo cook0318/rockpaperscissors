@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <script src="main.js"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="main.js"></script> 
+    
 
 
 
 
     <h1 id="title">Rock, Paper, Scissors</h1>
 
-    <button onclick="game('rock')" class="choice" id="rock">Rock</button>
-    <button onclick="game('paper')" class="choice" id="paper">Paper</button>
-    <button onclick="game('scissors')" class="choice" id="scissors">Scissors</button>
+    <button onclick="game('rock'), makeBlue('rock'), makeRed('scissors', 'paper')" class="choice" id="rock">Rock</button>
+    <button onclick="game('paper'), makeBlue('paper'), makeRed('scissors', 'rock')" class="choice" id="paper">Paper</button>
+    <button onclick="game('scissors'), makeBlue('scissors'), makeRed('rock', 'paper')" class="choice" id="scissors">Scissors</button>
 
 
 </body>

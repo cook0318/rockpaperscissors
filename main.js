@@ -18,8 +18,6 @@ function game(choice){
     }
 
 
-
-
     if (choice == "paper"){
         if (opponent == "rock"){
             console.log(opponent, "win");
@@ -47,5 +45,10 @@ function game(choice){
 }
 
 
-
-
+function makeBlue(choice){
+    $('#' + choice).css("background-color", "blue")
+}
+function makeRed(choice1, choice2){
+    $('#' + choice1).css("background-color", "red")
+    $('#' + choice2).css("background-color", "red")
+}
