@@ -18,6 +18,7 @@ function addScissors(){
 }
 
 function game(choice){
+    cycle();
     let opponent = options[Math.floor(Math.random() * options.length)]
     if (choice == "rock"){
         if (opponent == "rock"){
@@ -73,6 +74,7 @@ function game(choice){
         }
         addRock();
     }
+    
 }
 
 
@@ -116,4 +118,15 @@ function addLoss(){
     totalWins = 0;
     $("#totalWins").html(totalWins);
     $("#totalLosses").html(totalLosses);
+};
+
+function changeName(){
+    let oppName = prompt("What's your opponent's name?");
+    if (oppName != ""){
+    $("#oppName").html(oppName + "'s Choice:");
+    }
+};
+
+function cycle(){
+    $("#opponentChoice").addClass("cycle");
 }

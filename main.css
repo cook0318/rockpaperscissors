@@ -29,6 +29,43 @@ html{
     background: no-repeat center;
     background-color: hsl(194, 83%, 88%);
 }
+/* .cycle{
+    animation: myAnimation 1s ease 1 normal forwards;
+}
+
+@keyframes myAnimation{
+    0%{
+        background-image: url(icons/paper.png);
+    }
+    10%{
+        background-image: url(icons/scissors.png);
+    }
+    20%{
+        background-image: url(icons/rock.png);
+    }
+    30%{
+        background-image: url(icons/paper.png);
+    }
+    40%{
+        background-image: url(icons/scissors.png);
+    }
+    50%{
+        background-image: url(icons/rock.png);
+    }
+    60%{
+        background-image: url(icons/paper.png);
+    }
+    70%{
+        background-image: url(icons/scissors.png);
+    }
+    80%{
+        background-image: url(icons/rock.png);
+    }
+    90%{
+        background-image: url(icons/paper.png);
+    }
+    
+} */
 
 #wrapper{
     text-align: center;
@@ -53,3 +90,4 @@ button:hover{
 .inline{
     display: inline;
 }
+
