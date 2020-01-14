@@ -5,7 +5,8 @@ html{
 }
 #game{
     background-color: hsl(194, 83%, 60%);
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     max-width: 700px;
     width: 60%;
     display: inline-block;
@@ -75,6 +76,7 @@ html{
 
 button{
     margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 button:hover{
     box-shadow: darkslategray 2px 2px 5px;
