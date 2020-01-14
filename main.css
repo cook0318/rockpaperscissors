@@ -95,6 +95,9 @@ button:hover{
     #game{
         min-width:90%;
     }
-    
+    #title{
+        color: red;
+    }
+
 
 }
