@@ -93,7 +93,7 @@ button:hover{
     display: inline;
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     #game{
         min-width:90%;
     }
