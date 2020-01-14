@@ -91,3 +91,10 @@ button:hover{
     display: inline;
 }
 
+@media (max-width: 400px){
+    #game{
+        min-width:90%;
+    }
+    
+
+}
