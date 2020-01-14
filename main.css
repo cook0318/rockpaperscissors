@@ -1,11 +1,3 @@
-#title:hover{
-    color: red;
-}
-
-#title{
-    display: none;
-}
-
 .choice{
     display: inline-block;
     background-color: red;
@@ -16,12 +8,23 @@
 
 
 #opponentChoice{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border: 4px solid black;
+    display: inline-block;
+    margin-bottom: 2rem;
+    background: no-repeat center;
 }
 
-#game{
-    margin: auto;
-    width: 500px;
+#wrapper{
+    text-align: center;
+}
+
+button{
+    margin-left: 1rem;
+}
+#questionMark{
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
 }

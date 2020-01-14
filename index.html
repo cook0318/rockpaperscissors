@@ -10,25 +10,29 @@
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="main.js"></script> 
-    
-    <div id="game">
+    <div id="wrapper">
+        <div id="game">
 
 
 
-        <h1 id="title">Rock, Paper, Scissors</h1>
-        
-        <div id="buttons">
-            <button onclick="game('rock'), makeBlue('rock'), makeRed('scissors', 'paper')" class="choice" id="rock">Rock</button>
-            <button onclick="game('paper'), makeBlue('paper'), makeRed('scissors', 'rock')" class="choice" id="paper">Paper</button>
-            <button onclick="game('scissors'), makeBlue('scissors'), makeRed('rock', 'paper')" class="choice" id="scissors">Scissors</button>
+            <h1 id="title">Rock, Paper, Scissors</h1>
+            <h3>Welcome to my Rock, Paper, Scissors Game.</h3>
+
+            <p>Opponent Choice:</p>
+            <div id="opponentChoice"><p id="questionMark">?</p></div>
+
+            <p>Choose your weapon:</p>
+            <div id="buttons">
+                <button onclick="game('rock'), makeBlue('rock'), makeRed('scissors', 'paper'), removeQuestion()" class="choice" id="rock">Rock</button>
+                <button onclick="game('paper'), makeBlue('paper'), makeRed('scissors', 'rock'), removeQuestion()" class="choice" id="paper">Paper</button>
+                <button onclick="game('scissors'), makeBlue('scissors'), makeRed('rock', 'paper'), removeQuestion()" class="choice" id="scissors">Scissors</button>
+            </div>
+            
+
+            <p id="result"></p>
+
         </div>
-        <p id="opponentChoice">Opponent choice</p>
-
-
-        <p id="result"></p>
-
     </div>
-
 
 </body>
 </html>

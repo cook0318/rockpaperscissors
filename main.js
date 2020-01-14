@@ -9,15 +9,15 @@ function game(choice){
     if (choice == "rock"){
         if (opponent == "rock"){
             console.log(opponent, "draw");
-            $("#opponentChoice").css("background-image", "url(pics/rock.png)")
+            $("#opponentChoice").css("background-image", "url(icons/rock.png)")
             draw(choice);
         } else if (opponent == "scissors"){
             console.log(opponent, "win");
-            $("#opponentChoice").css("background-image", "url(pics/scissors.jpg)")
+            $("#opponentChoice").css("background-image", "url(icons/scissors.png)")
             win(choice, opponent);
         } else if (opponent == "paper") {
             console.log(opponent, "lose")
-            $("#opponentChoice").css("background-image", "url(pics/paper.png)")
+            $("#opponentChoice").css("background-image", "url(icons/paper.png)")
             lose(choice, opponent);
         }
 
@@ -27,15 +27,15 @@ function game(choice){
     if (choice == "paper"){
         if (opponent == "rock"){
             console.log(opponent, "win");
-            $("#opponentChoice").css("background-image", "url(pics/rock.png)")
+            $("#opponentChoice").css("background-image", "url(icons/rock.png)")
             win(choice, opponent);
         } else if (opponent == "scissors"){
             console.log(opponent, "lose");
-            $("#opponentChoice").css("background-image", "url(pics/scissors.jpg)")
+            $("#opponentChoice").css("background-image", "url(icons/scissors.png)")
             lose(choice, opponent);
         } else if (opponent == "paper") {
             console.log(opponent, "draw")
-            $("#opponentChoice").css("background-image", "url(pics/paper.png)")
+            $("#opponentChoice").css("background-image", "url(icons/paper.png)")
             draw(choice);
         }
 
@@ -47,15 +47,15 @@ function game(choice){
     if (choice == "scissors"){
         if (opponent == "rock"){
             console.log(opponent, "lose");
-            $("#opponentChoice").css("background-image", "url(pics/rock.png)")
+            $("#opponentChoice").css("background-image", "url(icons/rock.png)")
             lose(choice, opponent);
         } else if (opponent == "scissors"){
             console.log(opponent, "draw");
-            $("#opponentChoice").css("background-image", "url(pics/scissors.jpg)")
+            $("#opponentChoice").css("background-image", "url(icons/scissors.png)")
             draw(choice);
         } else if (opponent == "paper") {
             console.log(opponent, "win")
-            $("#opponentChoice").css("background-image", "url(pics/paper.png)")
+            $("#opponentChoice").css("background-image", "url(icons/paper.png)")
             win(choice, opponent);
         }
 
@@ -71,8 +71,9 @@ function makeRed(choice1, choice2){
     $('#' + choice2).css("background-color", "red")
 }
 
-
-
+function removeQuestion(){
+    $("#questionMark").css("display", "none")
+}
 
 function win(choice, opponent){
     $("#result").html("You chose " + choice + ". They chose " + opponent + ". You win!");
