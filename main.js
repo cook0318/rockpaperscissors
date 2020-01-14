@@ -3,6 +3,19 @@
 let options;
 options = ["rock", "paper", "scissors"]
 
+let totalWins=0;
+
+let totalLosses=0;
+
+function addPaper(){
+    options.push("paper");
+}
+function addRock(){
+    options.push("rock");
+}
+function addScissors(){
+    options.push("scissors")
+}
 
 function game(choice){
     let opponent = options[Math.floor(Math.random() * options.length)]
@@ -20,7 +33,7 @@ function game(choice){
             $("#opponentChoice").css("background-image", "url(icons/paper.png)")
             lose(choice, opponent);
         }
-
+        addPaper();
     }
 
 
@@ -38,7 +51,7 @@ function game(choice){
             $("#opponentChoice").css("background-image", "url(icons/paper.png)")
             draw(choice);
         }
-
+        addScissors();
     }
 
 
@@ -58,7 +71,7 @@ function game(choice){
             $("#opponentChoice").css("background-image", "url(icons/paper.png)")
             win(choice, opponent);
         }
-
+        addRock();
     }
 }
 
@@ -66,9 +79,9 @@ function game(choice){
 function makeBlue(choice){
     $('#' + choice).css("background-color", "blue")
 }
-function makeRed(choice1, choice2){
-    $('#' + choice1).css("background-color", "red")
-    $('#' + choice2).css("background-color", "red")
+function makeOrange(choice1, choice2){
+    $('#' + choice1).css("background-color", "orange")
+    $('#' + choice2).css("background-color", "orange")
 }
 
 function removeQuestion(){
@@ -77,12 +90,30 @@ function removeQuestion(){
 
 function win(choice, opponent){
     $("#result").html("You chose " + choice + ". They chose " + opponent + ". You win!");
+    addWin();
 }
 
 function lose(choice, opponent){
     $("#result").html("You chose " + choice + ". They chose " + opponent + ". You lose :(");
+    addLoss();
 }
 
 function draw(choice, opponent){
     $("#result").html("You both chose " + choice + ". Draw.");
+    
+}
+
+function addWin(){
+    totalWins++;
+    console.log(totalWins);
+    totalLosses = 0;
+    $("#totalWins").html(totalWins);
+    $("#totalLosses").html(totalLosses);
+}
+function addLoss(){
+    totalLosses++;
+    console.log(totalLosses);
+    totalWins = 0;
+    $("#totalWins").html(totalWins);
+    $("#totalLosses").html(totalLosses);
 }

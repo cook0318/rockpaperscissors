@@ -21,15 +21,19 @@
             <p>Opponent Choice:</p>
             <div id="opponentChoice"><p id="questionMark">?</p></div>
 
-            <p>Choose your weapon:</p>
+            <p id="choose">Choose your weapon:</p>
             <div id="buttons">
-                <button onclick="game('rock'), makeBlue('rock'), makeRed('scissors', 'paper'), removeQuestion()" class="choice" id="rock">Rock</button>
-                <button onclick="game('paper'), makeBlue('paper'), makeRed('scissors', 'rock'), removeQuestion()" class="choice" id="paper">Paper</button>
-                <button onclick="game('scissors'), makeBlue('scissors'), makeRed('rock', 'paper'), removeQuestion()" class="choice" id="scissors">Scissors</button>
+                <button onclick="game('rock'), makeBlue('rock'), makeOrange('scissors', 'paper'), removeQuestion()" class="choice" id="rock">Rock</button>
+                <button onclick="game('paper'), makeBlue('paper'), makeOrange('scissors', 'rock'), removeQuestion()" class="choice" id="paper">Paper</button>
+                <button onclick="game('scissors'), makeBlue('scissors'), makeOrange('rock', 'paper'), removeQuestion()" class="choice" id="scissors">Scissors</button>
             </div>
             
 
             <p id="result"></p>
+
+            <p class="inline">Total Wins in a row: </p><p class="inline" id="totalWins">0</p>
+            <br>
+            <p class="inline">Total Losses in a row: </p><p class="inline" id="totalLosses">0</p>
 
         </div>
     </div>

@@ -1,6 +1,19 @@
+html{
+    background-color: hsl(194, 83%, 88%);
+    margin-top: none;
+    padding-top: none;
+}
+#game{
+    background-color: hsl(194, 83%, 60%);
+    height: 100vh;
+    max-width: 700px;
+    width: 60%;
+    display: inline-block;
+}
+
 .choice{
     display: inline-block;
-    background-color: red;
+    background-color: orange;
     border: 3px solid black;
     width: 100px;
     height: 100px;
@@ -14,17 +27,29 @@
     display: inline-block;
     margin-bottom: 2rem;
     background: no-repeat center;
+    background-color: hsl(194, 83%, 88%);
 }
 
 #wrapper{
     text-align: center;
+    margin-top: none;
+    padding-top: none;
 }
 
 button{
     margin-left: 1rem;
 }
+button:hover{
+    box-shadow: darkslategray 2px 2px 5px;
+}
 #questionMark{
     font-size: 5rem;
     margin: 0;
     padding: 0;
+}
+#choose{
+    margin-top: 2rem;
+}
+.inline{
+    display: inline;
 }
