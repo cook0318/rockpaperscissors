@@ -16,10 +16,8 @@
 
 
             <h1 id="title">Rock, Paper, Scissors</h1>
-            <h3>Welcome to my Rock, Paper, Scissors Game.</h3>
 
             <p>Click opponent's name to change. Keep playing by clicking another choice.</p>
-            <br>
             
             <p onclick="changeName()", id="oppName">Opponent's Choice:</p>
             <div id="opponentChoice"><p id="questionMark">?</p></div>
@@ -30,13 +28,17 @@
                 <button onclick="game('paper'), makeBlue('paper'), makeOrange('scissors', 'rock'), removeQuestion()" class="choice" id="paper">Paper</button>
                 <button onclick="game('scissors'), makeBlue('scissors'), makeOrange('rock', 'paper'), removeQuestion()" class="choice" id="scissors">Scissors</button>
             </div>
-            
 
-            <p id="result"></p>
-
-            <p class="inline">Total Wins in a row: </p><p class="inline" id="totalWins">0</p>
-            <br>
-            <p class="inline">Total Losses in a row: </p><p class="inline" id="totalLosses">0</p>
+            <div id="resultsContainer">
+                <p id="result"></p>
+                <p class="inline">Total Wins in a row: </p><p class="inline" id="wins">0</p>
+                <br>
+                <p class="inline">Total Losses in a row: </p><p class="inline" id="losses">0</p>
+                <br>
+                <p class="inline">Total Wins: </p><p class="inline" id="totalWins">0</p>
+                <br>
+                <p class="inline">Total Losses: </p><p class="inline" id="totalLosses">0</p>
+            </div>
 
             
         </div>
